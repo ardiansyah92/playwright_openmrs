@@ -1,18 +1,18 @@
 # playwright_openmrs
 
-    Clone this repo:
+Clone this repo:
     
-        https://github.com/ardiansyah92/playwright_openmrs.git
+    https://github.com/ardiansyah92/playwright_openmrs.git
 
-    Running this code:  
+Running this code:  
     
-        npx playwright test tests/login.spec.js --headed
+    npx playwright test tests/login.spec.js --headed
 
-    Running untuk case tertentu
+Running untuk case tertentu
         
-        npx playwright test tests/login.spec.js
+    npx playwright test tests/login.spec.js
 
-    Running untuk UI Report 
+Running untuk UI Report 
     
-        npx playwright test --ui
+    npx playwright test --ui
 
