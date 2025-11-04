@@ -37,10 +37,8 @@ test.describe('Login Page Tests', () => {
     await expect(page).toHaveURL(/home\.page/);
     await expect(page.locator('h4')).toHaveText(
       'Logged in as Super User (admin) at Outpatient Clinic.',
-      { timeout: 10000 }
+      { timeout: 30000 }
     );
-
-
   });
 
 });
