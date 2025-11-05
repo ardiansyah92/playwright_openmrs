@@ -6,13 +6,13 @@ Clone this repo:
 
 Running this code:  
     
-    npx playwright test tests/login.spec.js --headed
+    ENV=prod npx playwright test tests/login.spec.js --headed
 
 Running untuk case tertentu
         
-    npx playwright test tests/login.spec.js
+    ENV=prod npx playwright test tests/login.spec.js
 
 Running untuk UI Report 
     
-    npx playwright test --ui
+    ENV=prod npx playwright test --ui
 

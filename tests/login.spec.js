@@ -1,13 +1,17 @@
 // Import Playwright Test
 const { test, expect } = require('@playwright/test');
 const credentials = require('../test_data/credentials.js');
+const envConfig = require('../env/env.config.js');
+
+const ENV = process.env.ENV || 'dev';
+const config = envConfig[ENV];
 
 test.describe('Login Page OpenMRS', () => {
 
   test('berhasil login dan masuk ke halaman utama openMRS', async ({ page, context, browserName }) => {
    
-    await page.goto('https://o2.openmrs.org/openmrs/login.htm');
-
+    // await page.goto('https://o2.openmrs.org/openmrs/login.htm');
+    await page.goto(config.baseUrl);
     
     const screenSize = { width: 1920, height: 1080 }; 
     await page.setViewportSize(screenSize);
